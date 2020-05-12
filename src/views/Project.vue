@@ -99,9 +99,22 @@
     color: #5D9AB2;
     color: var(--main-color);
     text-decoration: none;
+    position: relative;
   }
-  .project a:hover	{
-    text-decoration: underline;
+  .project a::after {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #5D9AB2;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;    
+  }
+  .project a:hover::after {
+    transform: scale(1, 1);    
   }
   .project .icon	{
     display: inline-block;
@@ -120,6 +133,7 @@
     width: 15rem;
   }
   .github {
+    color: #000000;
     margin-left: 0.5rem;
     font-size: 1.5rem;
   }
