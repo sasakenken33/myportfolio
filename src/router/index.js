@@ -20,6 +20,21 @@ const routes = [
     component: () => import('../views/Project.vue')
   },
   {
+    path: "/project/vrd",
+    name: 'VRD',
+    component: () => import('../views/VRD.vue')
+  },
+  {
+    path: "/project/arcs",
+    name: 'ARCS',
+    component: () => import('../views/ARCS.vue')
+  },
+  {
+    path: "/project/meiseki",
+    name: 'VRD',
+    component: () => import('../views/Meiseki.vue')
+  },
+  {
     path: "/thought",
     name: 'Thought',
     component: () => import('../views/Thought.vue')
