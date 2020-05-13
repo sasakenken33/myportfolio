@@ -41,7 +41,6 @@
     position: relative;
     display: inline-block;
     text-decoration: none;
-    font-weight: bold;  
     font-size: 1rem;
     color: #696969;  
   }
