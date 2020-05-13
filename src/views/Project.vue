@@ -2,38 +2,39 @@
   <section class="project">
     <div class="container">
       <div class="text">
-        <p><img src="../assets/VRD.png" class="logo"></p>
-        <h2>V_Research_Database</h2>
+        <a href="https://v-research-database.herokuapp.com/" target="_blank"><p><img src="../assets/VRD.png" class="logo"></p></a>
+        <h2><a href="/myportfolio/project/vrd" class="app">V_Research_Database</a></h2>
         <p>リサーチソースをタグ付管理するアプリケーション</p>
+        <p>ID: test PW: test でログインできます！</p>
         <p>使用技術：Ruby, Ruby on Rails<a href="https://github.com/sasakenken33/VRD" target="_blank" class="github"><span class="fab fa-github"></span></a></p>
-        <a href="https://v-research-database.herokuapp.com/" target="_blank">Jump to App
+        <a href="https://v-research-database.herokuapp.com/" target="_blank" class="app">Jump to App
         <span class="fa fa-chevron-right"></span>
         </a>
       </div>
       <div class="text">
-        <p><img src="../assets/ARCS_normal_cosme.png" class="logo"></p>
-        <h2>ARCS_@cosme</h2>
+        <a href="https://arcs-atcosme.herokuapp.com/" target="_blank"><p><img src="../assets/ARCS_normal_cosme.png" class="logo"></p></a>
+        <h2><a href="/myportfolio/project/arcs" class="app">ARCS_@cosme</a></h2>
         <p>@cosmeレビューを自動収集するスクレイピングツール(Ruby on Rails版)</p>
         <p>使用技術：Ruby, Ruby on Rails<a href="https://github.com/sasakenken33/ARCS_atcosme" target="_blank" class="github"><span class="fab fa-github"></span></a></p>
-        <a href="https://arcs-atcosme.herokuapp.com/" target="_blank">Jump to App
+        <a href="https://arcs-atcosme.herokuapp.com/" target="_blank" class="app">Jump to App
         <span class="fa fa-chevron-right"></span>
         </a>
       </div>
       <div class="text">
-        <p><img src="../assets/ARCS_normal_cosme.png" class="logo"></p>
-        <h2>ARCS_@cosme</h2>
+        <a href="https://arcs-at-cosme.herokuapp.com/" target="_blank"><p><img src="../assets/ARCS_normal_cosme.png" class="logo"></p></a>
+        <h2><a href="/myportfolio/project/arcs" class="app">ARCS_@cosme</a></h2>
         <p>@cosmeレビューを自動収集するスクレイピングツール(Flask版)</p>
         <p>使用技術：Python, Flask<a href="https://github.com/sasakenken33/ARCS_at_cosme" target="_blank" class="github"><span class="fab fa-github"></span></a></p>
-        <a href="https://arcs-at-cosme.herokuapp.com/" target="_blank">Jump to App
+        <a href="https://arcs-at-cosme.herokuapp.com/" target="_blank" class="app">Jump to App
         <span class="fa fa-chevron-right"></span>
         </a>
       </div>
       <div class="text">
-        <p><img src="../assets/Meiseki.png" class="logo"></p>
-        <h2>MEISEKI</h2>
+        <a href="https://meiseki.herokuapp.com/" target="_blank"><p><img src="../assets/Meiseki.png" class="logo"></p></a>
+        <h2><a href="/myportfolio/project/meiseki" class="app">MEISEKI</a></h2>
         <p>文学作品を形態素解析し、傾向値を算出するツール</p>
         <p>使用技術：Python, Flask<a href="https://github.com/sasakenken33/morpheme_analyzer" target="_blank" class="github"><span class="fab fa-github"></span></a></p>
-        <a href="https://meiseki.herokuapp.com/" target="_blank">Jump to App
+        <a href="https://meiseki.herokuapp.com/" target="_blank" class="app">Jump to App
         <span class="fa fa-chevron-right"></span>
         </a>
       </div>
@@ -48,7 +49,7 @@
         <h2>My Portfolio Site</h2>
         <p>このポートフォリオサイト</p>
         <p>使用技術：JavaScript, Vue.js<a href="https://github.com/sasakenken33/myportfolio" target="_blank" class="github"><span class="fab fa-github"></span></a></p>
-        <a href="https://sasakenken33.github.io/myportfolio/" target="_blank">Jump to App
+        <a href="https://sasakenken33.github.io/myportfolio/" target="_blank" class="app">Jump to App
         <span class="fa fa-chevron-right"></span>
         </a>
       </div>
@@ -61,8 +62,14 @@
       <div class="text">
         <span class="far fa-calendar-alt icon"></span>
         <h2>Slack bot for Google-Calendar</h2>
-        <p>Google-Calendarに登録した予定を毎朝お知らせしてくれるSlack bot</p>
+        <p>Google-Calendarの予定を毎朝知らせるSlack bot</p>
         <p>使用技術：JavaScript, Google App Script<a href="https://github.com/sasakenken33/G-Calendar_Manager" target="_blank" class="github"><span class="fab fa-github"></span></a></p>
+      </div>
+      <div class="text">
+        <span class="fas fa-book icon"></span>
+        <h2>自己分析SNS(仮)現在絶賛開発中！！</h2>
+        <p>自己分析×SNSがテーマのアプリケーション</p>
+        <p>使用技術：Ruby, Ruby on Rails</p>
       </div>
     </div>
   </section>
@@ -96,24 +103,23 @@
     opacity: 0.8;
   }
   .project a {
-    color: #5D9AB2;
-    color: var(--main-color);
+    color: #000;
     text-decoration: none;
     position: relative;
   }
-  .project a::after {
+  .project a.app::after {
     position: absolute;
     bottom: -4px;
     left: 0;
     content: '';
     width: 100%;
     height: 1px;
-    background: #5D9AB2;
+    background: #000;
     transform: scale(0, 1);
     transform-origin: left top;
     transition: transform .3s;    
   }
-  .project a:hover::after {
+  .project a.app:hover::after {
     transform: scale(1, 1);    
   }
   .project .icon	{
@@ -136,6 +142,9 @@
     color: #000000;
     margin-left: 0.5rem;
     font-size: 1.5rem;
+  }
+  .github:hover {
+    opacity: 0.8;
   }
   
   @media (min-width: 768px) {
