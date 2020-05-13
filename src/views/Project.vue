@@ -3,7 +3,7 @@
     <div class="container">
       <div class="text">
         <a href="https://v-research-database.herokuapp.com/" target="_blank"><p><img src="../assets/VRD.png" class="logo"></p></a>
-        <h2><a href="/myportfolio/project/vrd" class="app">V_Research_Database</a></h2>
+        <h2><router-link to="/project/vrd" class="app">V_Research_Database</router-link></h2>
         <p>リサーチソースをタグ付管理するアプリケーション</p>
         <p>ID: test PW: test でログインできます！</p>
         <p>使用技術：Ruby, Ruby on Rails<a href="https://github.com/sasakenken33/VRD" target="_blank" class="github"><span class="fab fa-github"></span></a></p>
@@ -13,7 +13,7 @@
       </div>
       <div class="text">
         <a href="https://arcs-atcosme.herokuapp.com/" target="_blank"><p><img src="../assets/ARCS_normal_cosme.png" class="logo"></p></a>
-        <h2><a href="/myportfolio/project/arcs" class="app">ARCS_@cosme</a></h2>
+        <h2><router-link to="/project/arcs" class="app">ARCS</router-link></h2>
         <p>@cosmeレビューを自動収集するスクレイピングツール(Ruby on Rails版)</p>
         <p>使用技術：Ruby, Ruby on Rails<a href="https://github.com/sasakenken33/ARCS_atcosme" target="_blank" class="github"><span class="fab fa-github"></span></a></p>
         <a href="https://arcs-atcosme.herokuapp.com/" target="_blank" class="app">Jump to App
@@ -22,7 +22,7 @@
       </div>
       <div class="text">
         <a href="https://arcs-at-cosme.herokuapp.com/" target="_blank"><p><img src="../assets/ARCS_normal_cosme.png" class="logo"></p></a>
-        <h2><a href="/myportfolio/project/arcs" class="app">ARCS_@cosme</a></h2>
+        <h2><router-link to="/project/arcs" class="app">ARCS</router-link></h2>
         <p>@cosmeレビューを自動収集するスクレイピングツール(Flask版)</p>
         <p>使用技術：Python, Flask<a href="https://github.com/sasakenken33/ARCS_at_cosme" target="_blank" class="github"><span class="fab fa-github"></span></a></p>
         <a href="https://arcs-at-cosme.herokuapp.com/" target="_blank" class="app">Jump to App
@@ -31,7 +31,7 @@
       </div>
       <div class="text">
         <a href="https://meiseki.herokuapp.com/" target="_blank"><p><img src="../assets/Meiseki.png" class="logo"></p></a>
-        <h2><a href="/myportfolio/project/meiseki" class="app">MEISEKI</a></h2>
+        <h2><router-link to="/project/meiseki" class="app">MEISEKI</router-link></h2>
         <p>文学作品を形態素解析し、傾向値を算出するツール</p>
         <p>使用技術：Python, Flask<a href="https://github.com/sasakenken33/morpheme_analyzer" target="_blank" class="github"><span class="fab fa-github"></span></a></p>
         <a href="https://meiseki.herokuapp.com/" target="_blank" class="app">Jump to App
