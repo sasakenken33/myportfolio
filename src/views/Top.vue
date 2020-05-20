@@ -17,7 +17,7 @@
     height: 100vh;
     min-height: 450px;
     background-position: center;
-    background-image: url("../assets/top.png");
+    /*background-image: url("../assets/top.png");*/
     background-size: cover;
     color: #696969;
     text-align: center;
